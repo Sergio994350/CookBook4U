@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CookBook4U</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="save">Saved</string>
+    <string name="dish_name">Dish Name</string>
+    <string name="cook_book_4u">Cook Book For You</string>
+    <string name="search_recipe">search recipe</string>
+    <string name="popular_recipes">Popular Recipes</string>
+    <string name="russian">russian</string>
+    <string name="borscht">Borscht</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="instructions">Instructions</string>
+    <string name="beef">Beef</string>
+</resources>

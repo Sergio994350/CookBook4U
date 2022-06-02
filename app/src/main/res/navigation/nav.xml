@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.sergio994350.cookbook4u.view.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_details"
+            app:destination="@id/details"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/saveFood"
+        android:name="com.sergio994350.cookbook4u.view.SaveFoodFragment"
+        android:label="fragment_save_food"
+        tools:layout="@layout/fragment_save_food" >
+        <action
+            android:id="@+id/action_saveFood_to_details"
+            app:destination="@id/details"
+            app:popUpTo="@id/details"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/details"
+        android:name="com.sergio994350.cookbook4u.view.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="details"
+            app:argType="com.sergio994350.cookbook4u.Model.Meal" />
+        <action
+            android:id="@+id/action_details_to_home2"
+            app:destination="@id/home2"
+            app:popUpTo="@id/home2"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+</navigation>
