@@ -40,7 +40,7 @@
                 android:fontFamily="@font/handlee"
                 android:text="@string/borscht"
                 android:textColor="@color/dark_grey"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/image_view_saved_meal"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,11 +50,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/handlee"
-                android:text="borscht description"
+                android:text="@string/dish_description"
                 android:textColor="@color/dark_grey"
                 android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="@+id/text_view_saved_meal_title"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/text_view_saved_meal_title"
                 app:layout_constraintTop_toBottomOf="@+id/text_view_saved_meal_title" />
         </androidx.constraintlayout.widget.ConstraintLayout>

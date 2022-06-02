@@ -3,10 +3,10 @@
 
     <item
         android:id="@+id/home2"
-        android:icon="@drawable/ic_baseline_home_24"
+        android:icon="@drawable/ic_home_24"
         android:title="@string/home" />
     <item
         android:id="@+id/saveFood"
-        android:icon="@drawable/ic_baseline_bookmark_border_24"
+        android:icon="@drawable/ic_bookmark_24"
         android:title="@string/save" />
 </menu>

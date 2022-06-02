@@ -42,9 +42,9 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                             Glide.with(this).load(item.strMealThumb).into(image_dish_big)
                             name_food_D.text = item.strMeal
                             countryD.text = item.strArea
-                            tv_dish_description.text = item.strInstructions
+                            text_view_instruction_content.text = item.strInstructions
 
-                            ingredient.text = """
+                            text_view_ingredient_content.text = """
                                 ${item.strMeasure1 + " " + item.strIngredient1}
                                 ${item.strMeasure2 + " " + item.strIngredient2}
                                 ${item.strMeasure3 + " " + item.strIngredient3}

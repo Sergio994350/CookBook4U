@@ -50,13 +50,16 @@
             <TextView
                 android:id="@+id/text_view_fragment_home_title"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="22dp"
+                android:layout_height="36dp"
                 android:fontFamily="@font/handlee"
-                 android:text="@string/cook_book_4u"
+                android:paddingTop="6dp"
+                android:paddingStart="24dp"
+                android:text="@string/cook_book_4u"
                 android:textColor="@color/black"
-                android:textSize="22sp" />
+                android:textSize="22sp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="22dp"
+                tools:ignore="RtlSymmetry" />
 
             <EditText
                 android:id="@+id/search_food"
@@ -65,8 +68,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/circle"
-                android:drawableStart="@drawable/ic_baseline_search_24"
+                android:background="@drawable/square_circle_corners"
+                android:drawableStart="@drawable/ic_search_24"
                 android:ems="10"
                 android:hint="@string/search_recipe"
                 android:inputType="textPersonName"
