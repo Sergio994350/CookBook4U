@@ -36,7 +36,7 @@ class SaveAdapter : RecyclerView.Adapter<SaveAdapter.ViewHolder>() {
         holder.itemView.apply {
             Glide.with(context).load(save.strMealThumb).into(image_view_saved_meal)
             text_view_saved_meal_title.text = save.strMeal
-            text_view_saved_meal_description.text = save.strCategory
+//            text_view_saved_meal_description.text = save.strCategory
             setOnClickListener {
                 onItemClickListener?.let { it(save) }
             }

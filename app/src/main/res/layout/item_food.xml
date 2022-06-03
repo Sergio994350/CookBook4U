@@ -7,12 +7,12 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view_item_food"
-        android:layout_width="180dp"
-        android:layout_height="190dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="5dp"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardElevation="@dimen/_5sdp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -29,22 +29,21 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_save"
-                android:layout_width="33dp"
-                android:layout_height="33dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="15dp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:backgroundTint="@color/light_grey"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_10sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/imageView9"
+                    android:id="@+id/iv_icon_cancel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_margin="@dimen/_5sdp"
                     app:srcCompat="@drawable/ic_bookmark_24" />
             </androidx.cardview.widget.CardView>
 
@@ -54,30 +53,30 @@
 
     <TextView
         android:id="@+id/name_food"
-        android:layout_width="174dp"
+        android:layout_width="@dimen/_130sdp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="@dimen/_6sdp"
         android:fontFamily="@font/handlee"
         android:gravity="center_horizontal"
-        android:text="Borscht"
+        android:text="@string/borscht"
         android:textColor="@color/dark_grey"
-        android:textSize="16sp"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintRight_toRightOf="@+id/card_view_item_food"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@+id/card_view_item_food"
         app:layout_constraintTop_toBottomOf="@+id/card_view_item_food" />
 
-    <TextView
-        android:id="@+id/country"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/handlee"
-        android:textColor="@color/dark_grey"
-        android:gravity="center_horizontal"
-        android:text="russian"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/name_food"
-        app:layout_constraintEnd_toEndOf="@+id/name_food"
-        app:layout_constraintTop_toBottomOf="@+id/name_food" />
+<!--    <TextView-->
+<!--        android:id="@+id/country"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/handlee"-->
+<!--        android:textColor="@color/dark_grey"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:text="@string/russian"-->
+<!--        android:textSize="@dimen/_16ssp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/name_food"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/name_food"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/name_food" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

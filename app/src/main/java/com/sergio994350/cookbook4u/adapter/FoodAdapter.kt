@@ -37,7 +37,7 @@ class FoodAdapter : RecyclerView.Adapter<FoodAdapter.ViewHolder>() {
         holder.itemView.apply {
             Glide.with(this).load(food.strMealThumb).into(image_view_item_food)
             name_food.text = food.strMeal
-            country.text = food.strArea
+//            country.text = food.strArea
             card_save.setOnClickListener {
                 onItemClickListener2?.let { it(food) }
                 card_save.setCardBackgroundColor(Color.WHITE);
