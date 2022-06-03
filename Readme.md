@@ -8,7 +8,7 @@ fill data into created Room database,
 show list of dish categories and list of dishes in RecyclerViews.
 
 Click on any Dish to enter Details Fragment.
-Save to favorites, swipe delete, get toasts for save and delete.
+Save to favorites, swipe delete, get toasts for save and delete. Get YouTube video by click on Button.
 Search recipe in search field by first letters  
 
 ![alt tag](https://github.com/Sergio994350/CookBook4U/blob/master/app/src/main/res/screenshots/screenshot-2022-06-03_11.58.32.675.png)
