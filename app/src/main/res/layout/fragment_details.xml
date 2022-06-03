@@ -10,7 +10,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="320dp"
+        android:layout_height="@dimen/_230sdp"
         android:fitsSystemWindows="true">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
@@ -25,7 +25,7 @@
             <ImageView
                 android:id="@+id/image_dish_big"
                 android:layout_width="match_parent"
-                android:layout_height="360dp"
+                android:layout_height="@dimen/_250sdp"
                 android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -53,14 +53,14 @@
 
             <TextView
                 android:id="@+id/name_food_D"
-                android:layout_width="248dp"
+                android:layout_width="@dimen/_200sdp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:fontFamily="@font/handlee"
                 android:text="@string/borscht"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="@dimen/_18ssp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,11 +68,11 @@
                 android:id="@+id/countryD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="@dimen/_3sdp"
                 android:fontFamily="@font/handlee"
                 android:textColor="@color/dark_grey"
                 android:text="@string/russian"
-                android:textSize="18sp"
+                android:textSize="@dimen/_14ssp"
                 app:layout_constraintLeft_toLeftOf="@+id/name_food_D"
                 app:layout_constraintTop_toBottomOf="@+id/name_food_D" />
 
@@ -80,11 +80,11 @@
                 android:id="@+id/text_view_ingredient_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:fontFamily="@font/handlee"
                 android:text="@string/ingredients"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="@dimen/_18ssp"
                 app:layout_constraintLeft_toLeftOf="@+id/countryD"
                 app:layout_constraintTop_toBottomOf="@+id/countryD" />
 
@@ -93,10 +93,10 @@
                 android:id="@+id/text_view_ingredient_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
+                android:layout_marginTop="@dimen/_4sdp"
                 android:fontFamily="@font/handlee"
                 android:text="TextView"
-                android:textSize="15sp"
+                android:textSize="@dimen/_14ssp"
                 app:layout_constraintLeft_toLeftOf="@+id/text_view_ingredient_title"
                 app:layout_constraintTop_toBottomOf="@+id/text_view_ingredient_title" />
 
@@ -104,25 +104,23 @@
                 android:id="@+id/text_view_instruction_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
                 android:fontFamily="@font/handlee"
                 android:text="@string/instructions"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="@dimen/_18ssp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_view_ingredient_content" />
 
             <TextView
                 android:id="@+id/text_view_instruction_content"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/_280sdp"
                 android:layout_height="wrap_content"
-
                 android:fontFamily="@font/handlee"
                 android:text="TextView TextView TextView TextView TextView TextView"
-                android:textSize="15sp"
+                android:textSize="@dimen/_14ssp"
                 app:layout_constraintLeft_toLeftOf="@+id/text_view_instruction_title"
-
                 app:layout_constraintTop_toBottomOf="@+id/text_view_instruction_title" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -132,12 +130,12 @@
         android:id="@+id/play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
+        android:layout_marginEnd="@dimen/_25sdp"
         android:backgroundTint="@color/youtube"
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/ic_play_arrow_24"
-        app:elevation="5dp"
+        app:elevation="@dimen/_5sdp"
         app:layout_anchor="@id/appbar"
         app:layout_anchorGravity="end|bottom"
         app:shapeAppearanceOverlay="@style/fab_square"
@@ -161,7 +159,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="6dp"
+            android:layout_marginStart="@dimen/_3sdp"
             android:src="@drawable/ic_arrow_back_24" />
     </androidx.cardview.widget.CardView>
 

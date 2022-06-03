@@ -1,6 +1,7 @@
 package com.sergio994350.cookbook4u.view
 
 import android.content.Intent
+import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
@@ -9,6 +10,8 @@ import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.bumptech.glide.Glide
+import com.google.android.material.snackbar.BaseTransientBottomBar
+import com.google.android.material.snackbar.Snackbar
 import com.sergio994350.cookbook4u.R
 import com.sergio994350.cookbook4u.util.Resource
 import com.sergio994350.cookbook4u.viewModel.FoodViewModel
@@ -29,11 +32,16 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
 
         card_view_save_dish.setOnClickListener {
             viewModel.saveFood(food)
+            Snackbar.make(view, "Recipe Saved", Snackbar.LENGTH_SHORT).apply {
+                animationMode = BaseTransientBottomBar.ANIMATION_MODE_SLIDE
+                setBackgroundTint(Color.parseColor("#535151"))
+                setTextColor(Color.parseColor("#FFFFFF"))
+                show()
+            }
         }
 
         viewModel.getDetails(food.idMeal.toString())
 
-        // TODO переделать передачу ингредиентов
         viewModel.details.observe(viewLifecycleOwner, Observer { response ->
             when (response) {
                 is Resource.Success -> {

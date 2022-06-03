@@ -1,6 +1,7 @@
 package com.sergio994350.cookbook4u.view
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -10,6 +11,8 @@ import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.snackbar.BaseTransientBottomBar
+import com.google.android.material.snackbar.Snackbar
 import com.sergio994350.cookbook4u.R
 import com.sergio994350.cookbook4u.adapter.CategoryAdapter
 import com.sergio994350.cookbook4u.adapter.FoodAdapter
@@ -78,6 +81,12 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
         foodAdapter.setOnItemClickListener2 {
             viewModel.saveFood(it)
+            Snackbar.make(view, "Recipe Saved", Snackbar.LENGTH_SHORT).apply {
+                animationMode = BaseTransientBottomBar.ANIMATION_MODE_SLIDE
+                setBackgroundTint(Color.DKGRAY)
+                setTextColor(Color.WHITE)
+                show()
+            }
         }
 
 
