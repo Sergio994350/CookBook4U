@@ -50,7 +50,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             job?.cancel()
             job = MainScope().launch {
                 delay(500L)
-
                 editable?.let {
                     if (editable.toString().isNotEmpty()) {
                         viewModel.getSearchMeal(editable.toString())
@@ -63,7 +62,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                                         for (item in Random.meals) {
                                             titleRE.text = item.strMeal
                                         }
-                                        //  editable.clear()
+                                        //editable.clear()
                                     }
                                 }
                                 is Resource.Error -> {
