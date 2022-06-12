@@ -15,7 +15,6 @@ import com.sergio994350.cookbook4u.R
 import com.sergio994350.cookbook4u.adapter.SaveAdapter
 import com.sergio994350.cookbook4u.viewModel.FoodViewModel
 import kotlinx.android.synthetic.main.fragment_save_food.*
-import kotlinx.android.synthetic.main.item_save.*
 
 
 class SaveFoodFragment : Fragment(R.layout.fragment_save_food) {
@@ -55,7 +54,7 @@ class SaveFoodFragment : Fragment(R.layout.fragment_save_food) {
                 val food = saveFood.differ.currentList[position]
                 if (direction == ItemTouchHelper.LEFT || direction == ItemTouchHelper.RIGHT) {
                     viewModel.deleteFood(food)
-                    Snackbar.make(view, "Recipe Deleted", Snackbar.LENGTH_SHORT).apply {
+                    Snackbar.make(view, "Recipe Deleted", Snackbar.LENGTH_LONG).apply {
                         animationMode = BaseTransientBottomBar.ANIMATION_MODE_SLIDE
                         setBackgroundTint(Color.DKGRAY)
                         setTextColor(Color.WHITE)

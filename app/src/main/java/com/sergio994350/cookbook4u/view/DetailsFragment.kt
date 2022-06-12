@@ -1,5 +1,6 @@
 package com.sergio994350.cookbook4u.view
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.net.Uri
@@ -22,6 +23,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
     lateinit var viewModel: FoodViewModel
     val args: DetailsFragmentArgs by navArgs()
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = (activity as MainActivity).viewModel
@@ -34,13 +36,13 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
             viewModel.saveFood(food)
             Snackbar.make(view, "Recipe Saved", Snackbar.LENGTH_SHORT).apply {
                 animationMode = BaseTransientBottomBar.ANIMATION_MODE_SLIDE
-                setBackgroundTint(Color.parseColor("#535151"))
-                setTextColor(Color.parseColor("#FFFFFF"))
+                setBackgroundTint(Color.DKGRAY)
+                setTextColor(Color.WHITE)
                 show()
             }
         }
 
-        viewModel.getDetails(food.idMeal.toString())
+        viewModel.getDetails(food.idMeal)
 
         viewModel.details.observe(viewLifecycleOwner, Observer { response ->
             when (response) {
@@ -74,7 +76,6 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                                 ${item.strMeasure19 + " " + item.strIngredient19}
                                 ${item.strMeasure20 + " " + item.strIngredient20}
                             """.trimIndent()
-
 
                             // go to youtube url
                             play.setOnClickListener {

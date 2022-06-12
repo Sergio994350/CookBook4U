@@ -21,7 +21,7 @@ class FoodViewModel(val foodRepository: FoodRepository) : ViewModel() {
 
     init {
         getCategory()
-        getFilter("Beef")
+        getFilter("Chicken")
     }
 
     fun getSearchMeal(search: String) = viewModelScope.launch {

@@ -42,7 +42,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         setupRecyclerViewF()
         setupRecyclerViewC()
 
-        titleRE.text = "Beef"
+        titleRE.text = "Chicken"
         var job: Job? = null
 
         search_food.text.clear()

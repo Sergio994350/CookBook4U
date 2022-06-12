@@ -19,7 +19,7 @@ interface FoodApi {
     suspend fun getCategoryRf(): Response<CategoriesList>
 
     @GET(FILTER)
-    suspend fun getFilterCategoryRf(@Query("c") category: String = "Seafood"): Response<RandomMeals>
+    suspend fun getFilterCategoryRf(@Query("c") category: String = "Chicken"): Response<RandomMeals>
 
     @GET(LOOKUP)
     suspend fun getDetailsRf(@Query("i") id: String = "1"): Response<RandomMeals>
