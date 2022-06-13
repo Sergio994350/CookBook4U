@@ -4,14 +4,14 @@ Retrofit2, Room, Hilt, Coroutines, MVVM project.
 Glide for load pics, intuit for scalable sizes for different devices.
 
 // Данный MVVM-проект использует Retrofit2, Room, Hilt, Coroutines,
-Glide для загрузки изображений, intuit для адаптации текста и размеров для разных устройств.
+а также Glide для загрузки изображений, intuit для адаптации текста и размеров для разных устройств.
 
 Get JSON from themealdb.com by Retrofit2,
 fill data into created Room database, 
 show list of dish categories and list of dishes in RecyclerViews.
 
 // Получает JSON с API themealdb.com, с помощью Retrofit,
-заполняет созданную базу данных, показывает список категорий и список блюд в 2х RecyclerView
+заполняет созданную базу данных, показывает список категорий и список блюд в разных RecyclerView
 
 Click on any Dish to enter Details Fragment.
 Save to favorites, swipe delete, get snackbars for save and delete. Get YouTube video by click on Button.
