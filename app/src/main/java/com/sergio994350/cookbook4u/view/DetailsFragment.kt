@@ -6,6 +6,7 @@ import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
@@ -83,6 +84,12 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
                                 startActivity(intent)
                             }
                         }
+                    }
+                }
+                is Resource.Error -> {
+                    response.message.let { msg ->
+                        Toast.makeText(activity, "Error: $msg", Toast.LENGTH_LONG).show()
+//                        Log.e(TAG, "Error: $msg")
                     }
                 }
                 else -> {}

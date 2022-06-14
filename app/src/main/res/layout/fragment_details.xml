@@ -95,7 +95,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_4sdp"
                 android:fontFamily="@font/handlee"
-                android:text="TextView"
+                android:text="@string/ingredients_for_borscht"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintLeft_toLeftOf="@+id/text_view_ingredient_title"
                 app:layout_constraintTop_toBottomOf="@+id/text_view_ingredient_title" />
@@ -118,7 +118,7 @@
                 android:layout_width="@dimen/_280sdp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/handlee"
-                android:text="TextView TextView TextView TextView TextView TextView"
+                android:text="@string/borscht_preparation"
                 android:textSize="@dimen/_14ssp"
                 app:layout_constraintLeft_toLeftOf="@+id/text_view_instruction_title"
                 app:layout_constraintTop_toBottomOf="@+id/text_view_instruction_title" />

@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.sergio994350.cookbook4u.CookBookApplication
 import com.sergio994350.cookbook4u.R
 import com.sergio994350.cookbook4u.db.FoodDatabase
 import com.sergio994350.cookbook4u.repository.FoodRepository
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         val navController = navHostFragment.navController
         val foodRepository = FoodRepository(FoodDatabase(this))
-        val viewModelProviderFactory = FoodViewModelProviderFactory(foodRepository)
+        val viewModelProviderFactory = FoodViewModelProviderFactory(application as CookBookApplication, foodRepository)
 
         navView.setupWithNavController(navController)
 

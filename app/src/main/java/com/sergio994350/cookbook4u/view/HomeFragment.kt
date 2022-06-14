@@ -5,6 +5,7 @@ import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -66,8 +67,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                                     }
                                 }
                                 is Resource.Error -> {
-                                    response.message.let { message ->
-                                        Log.e(TAG, "Error: $message")
+                                    response.message.let { msg ->
+                                        Toast.makeText(activity, "Error: $msg", Toast.LENGTH_LONG)
+                                            .show()
+//                                        Log.e(TAG, "Error: $message")
                                     }
                                 }
                                 else -> {}
@@ -111,7 +114,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 }
                 is Resource.Error -> {
                     response.message.let { msg ->
-                        Log.e(TAG, "Error: $msg")
+                        Toast.makeText(activity, "Error: $msg", Toast.LENGTH_LONG).show()
+//                        Log.e(TAG, "Error: $msg")
                     }
                 }
                 else -> {}
@@ -127,7 +131,8 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 }
                 is Resource.Error -> {
                     response.message.let { msg ->
-                        Log.e(TAG, "Error: $msg")
+                        Toast.makeText(activity, "Error: $msg", Toast.LENGTH_LONG).show()
+//                        Log.e(TAG, "Error: $msg")
                     }
                 }
                 else -> {}
