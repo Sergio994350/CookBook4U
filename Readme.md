@@ -5,7 +5,7 @@ Glide for load pics, intuit for scalable sizes for different devices.
 
 // Данный MVVM-проект использует Retrofit2, Room, Hilt, Coroutines,
 а также Glide для загрузки изображений, intuit для адаптации текста и размеров для разных устройств.
-Проверка состояния интернет-соединения, всплывающие сообщения об отсутсвии подключения.
+Проверка состояния интернет-соединения, всплывающие сообщения об отсутствии подключения.
 
 Get JSON from themealdb.com by Retrofit2,
 fill data into created Room database, 
